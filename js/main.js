@@ -91,3 +91,53 @@
     });
   });
 })();
+
+// Reveal archive items in groups of four
+(function() {
+  document.querySelectorAll('[data-reveal-list]').forEach(function(list) {
+    var items = Array.prototype.slice.call(list.querySelectorAll('[data-reveal-item]'));
+    if (!items.length) return;
+
+    var initialCount = parseInt(list.getAttribute('data-reveal-initial'), 10) || 4;
+    var stepCount = parseInt(list.getAttribute('data-reveal-step'), 10) || 4;
+    var visibleCount = initialCount;
+    var moreButton = document.querySelector('[data-reveal-more="' + list.id + '"]');
+    var lessButton = document.querySelector('[data-reveal-less="' + list.id + '"]');
+    var countTarget = document.querySelector('[data-reveal-count="' + list.id + '"]');
+
+    function render() {
+      items.forEach(function(item, index) {
+        item.classList.toggle('is-hidden', index >= visibleCount);
+      });
+
+      if (countTarget) {
+        countTarget.textContent = Math.min(visibleCount, items.length) + ' of ' + items.length + ' items visible';
+      }
+
+      if (moreButton) {
+        moreButton.hidden = visibleCount >= items.length;
+      }
+
+      if (lessButton) {
+        lessButton.hidden = visibleCount <= initialCount;
+      }
+    }
+
+    if (moreButton) {
+      moreButton.addEventListener('click', function() {
+        visibleCount = Math.min(visibleCount + stepCount, items.length);
+        render();
+      });
+    }
+
+    if (lessButton) {
+      lessButton.addEventListener('click', function() {
+        visibleCount = initialCount;
+        render();
+        list.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+
+    render();
+  });
+})();
