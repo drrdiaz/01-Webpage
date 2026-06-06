@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" width="80" height="80">
+  <circle cx="40" cy="40" r="39" fill="#1a3a6e"/>
+  <circle cx="40" cy="40" r="38" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="40" y="36" font-family="Georgia,serif" font-size="13" font-weight="700"
+        fill="white" text-anchor="middle" dominant-baseline="middle">RANZCR</text>
+  <line x1="16" y1="42" x2="64" y2="42" stroke="rgba(255,255,255,0.3)" stroke-width="0.8"/>
+  <text x="40" y="52" font-family="Arial,sans-serif" font-size="6.5" fill="rgba(255,255,255,0.85)"
+        text-anchor="middle">NZ College of</text>
+  <text x="40" y="61" font-family="Arial,sans-serif" font-size="6" fill="rgba(255,255,255,0.7)"
+        text-anchor="middle">Radiologists</text>
+</svg>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News &amp; Podcast | Dr Rodrigo Diaz MD FRANZCR</title>
+<meta name="description" content="Dr Rodrigo Diaz, Radiation Oncologist. News and podcast episodes on radiation oncology and AI in cancer care.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-body">
+<nav class="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand">
+      <span class="nav__brand-name">Dr Rodrigo Diaz</span>
+      <span class="nav__brand-title">MD, FRANZCR &middot; Radiation Oncologist</span>
+    </a>
+    <button class="nav__toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="patients.html" class="nav__link">Patients</a>
+      <a href="colleagues.html" class="nav__link">Colleagues</a>
+      <a href="ai.html" class="nav__link">AI &amp; RadOnc</a>
+      <a href="blog.html" class="nav__link">Evidence Review</a>
+      <a href="news.html" class="nav__link active">News &amp; Podcast</a>
+      <a href="cv.html" class="nav__link">CV</a>
+      <a href="https://www.linkedin.com/in/" target="_blank" class="nav__link nav__link--cta">LinkedIn &#8599;</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="page-hero__eyebrow">Stay Informed</span>
+    <h1 class="page-hero__title">News &amp; Podcast</h1>
+    <p class="page-hero__desc">Latest updates in radiation oncology, AI in cancer care, and conversations worth having. Select a tile to read more.</p>
+  </div>
+</div>
+
+<!-- NEWS SECTION -->
+<section style="background:var(--white)">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-label">News</span>
+      <h2 class="section-title">Recent Updates</h2>
+      <p class="section-desc">Select a topic to read more.</p>
+    </div>
+
+    <div class="info-tile-grid" id="news-grid">
+
+      <div class="info-tile" data-panel="news-1">
+        <div class="info-tile__img info-tile__img--news1">
+          <span class="info-tile__tag">AI &amp; Oncology</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">AI-Assisted Contouring in Radiation Oncology</p>
+          <p class="info-tile__desc">How auto-segmentation tools are changing treatment planning workflows.</p>
+          <span class="info-tile__cta">Read more <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+      <div class="info-tile" data-panel="news-2">
+        <div class="info-tile__img info-tile__img--news2">
+          <span class="info-tile__tag">Clinical Practice</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">SABR for Oligometastatic Disease: 2025 Update</p>
+          <p class="info-tile__desc">New trial data reshaping how we approach limited metastatic spread.</p>
+          <span class="info-tile__cta">Read more <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+      <div class="info-tile" data-panel="news-3">
+        <div class="info-tile__img info-tile__img--news3">
+          <span class="info-tile__tag">Education</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">Radiotherapy in Regional Queensland</p>
+          <p class="info-tile__desc">Delivering evidence-based cancer care outside major metropolitan centres.</p>
+          <span class="info-tile__cta">Read more <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Expand panels -->
+    <div class="info-tile-panel" id="news-1">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">AI &amp; Oncology</span>
+        <h3 class="info-tile-panel__title">AI-Assisted Contouring in Radiation Oncology</h3>
+        <p>Auto-segmentation tools powered by deep learning are now entering routine clinical use in radiation oncology departments worldwide. These tools can delineate organs at risk and target volumes in a fraction of the time required for manual contouring, with performance approaching that of experienced clinicians for well-defined structures such as the parotid glands, bladder, and femoral heads.</p>
+        <p>However, clinical implementation requires careful quality assurance. AI contours should always be reviewed and corrected by a qualified radiation oncologist before use in treatment planning. Current evidence suggests that AI contouring reduces inter-observer variability and planner workload, but does not yet replace the clinical judgement required for tumour delineation in complex cases.</p>
+        <p>The practical implication for radiation oncology practice is a shift in the role of the clinician — from drawing structures to reviewing and refining them. This demands training, standardised review workflows, and an understanding of where AI tools are most and least reliable.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">This is a summary post. Full references and citations will be included in the Evidence Review series.</p>
+      </div>
+    </div>
+
+    <div class="info-tile-panel" id="news-2">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">Clinical Practice</span>
+        <h3 class="info-tile-panel__title">SABR for Oligometastatic Disease: 2025 Update</h3>
+        <p>Stereotactic ablative radiotherapy (SABR) for oligometastatic disease has moved from hypothesis to established practice over the past decade. Landmark randomised trials — including SABR-COMET and ORIOLE — demonstrated survival benefits and improved progression-free survival in selected patients with limited metastatic burden.</p>
+        <p>More recent data from 2024&ndash;2025 have refined patient selection criteria. The definition of oligometastatic disease has evolved to incorporate not just the number of lesions (&le;5 in most trials), but also biological factors such as disease-free interval, primary tumour histology, and response to systemic therapy. Patients with synchronous versus metachronous metastases appear to have different outcomes.</p>
+        <p>The practical implication is that SABR for oligometastatic disease should be discussed within a multidisciplinary setting, with clear documentation of intent (curative versus cytoreductive) and expectation management around the difference between progression-free and overall survival.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">This is a summary post. Full references and citations will be included in the Evidence Review series.</p>
+      </div>
+    </div>
+
+    <div class="info-tile-panel" id="news-3">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">Education</span>
+        <h3 class="info-tile-panel__title">Radiotherapy in Regional Queensland</h3>
+        <p>Access to radiation oncology services remains unequal across Australia. Patients in regional and remote areas face significant barriers including distance to treatment centres, accommodation costs, and the burden of daily travel during a course of treatment that may last several weeks.</p>
+        <p>Hypofractionation — delivering fewer, larger doses of radiation — has substantially reduced treatment duration for many common cancers, including prostate and breast cancer, making radiotherapy more feasible for patients who cannot be away from home for extended periods. SABR for early lung cancer, for instance, is delivered in 3&ndash;8 fractions rather than 30&ndash;35.</p>
+        <p>Telehealth consultations have also improved access to radiation oncology specialist advice without requiring patients to travel for every appointment. While the initial planning CT scan and treatment itself require attendance at a radiotherapy centre, many follow-up consultations and on-treatment reviews can now be conducted remotely.</p>
+        <p>As a radiation oncologist based in Rockhampton, equitable access to evidence-based radiotherapy for regional Queenslanders is a central focus of my practice.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">This is a summary post.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PODCAST SECTION -->
+<section style="background:var(--bg)">
+  <div class="container">
+
+    <div class="section-header">
+      <span class="section-label">Podcast</span>
+      <h2 class="section-title">Listen &amp; Learn</h2>
+      <p class="section-desc">Conversations on radiation oncology, cancer care, and the role of AI. Select an episode to find out more.</p>
+    </div>
+
+    <div class="info-tile-grid" id="podcast-grid">
+
+      <div class="info-tile" data-panel="pod-1">
+        <div class="info-tile__img info-tile__img--pod1">
+          <span class="info-tile__tag">Episode 1</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">What Is Radiation Therapy?</p>
+          <p class="info-tile__desc">A plain-language introduction for patients, families, and curious minds.</p>
+          <span class="info-tile__cta">Listen <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+      <div class="info-tile" data-panel="pod-2">
+        <div class="info-tile__img info-tile__img--pod2">
+          <span class="info-tile__tag">Episode 2</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">AI in Cancer Care: Hype vs. Reality</p>
+          <p class="info-tile__desc">Separating genuine clinical advances from marketing noise in oncology AI.</p>
+          <span class="info-tile__cta">Listen <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+      <div class="info-tile" data-panel="pod-3">
+        <div class="info-tile__img info-tile__img--pod3">
+          <span class="info-tile__tag">Episode 3</span>
+        </div>
+        <div class="info-tile__body">
+          <p class="info-tile__title">Shared Decision-Making in Oncology</p>
+          <p class="info-tile__desc">How patients and clinicians can navigate treatment choices together.</p>
+          <span class="info-tile__cta">Listen <span class="info-tile__arrow">&#x25BC;</span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Expand panels for podcast -->
+    <div class="info-tile-panel" id="pod-1">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">Episode 1</span>
+        <h3 class="info-tile-panel__title">What Is Radiation Therapy?</h3>
+        <div class="info-tile-panel__player">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--navy-light)"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" style="color:var(--navy)"/></svg>
+          <p style="font-size:0.85rem; color:var(--text-light); margin:0">Podcast coming soon &mdash; episode player will appear here.</p>
+        </div>
+        <p>In this first episode, I give a plain-language overview of radiation therapy: what it is, how it works, and what patients can expect when they are referred to a radiation oncologist. The episode covers the difference between external beam radiotherapy and brachytherapy, why radiotherapy is used, and how the treatment process works from first consultation through to follow-up.</p>
+        <p>This episode is designed for patients who have recently received a referral to radiation oncology, and for family members who want to understand what their loved one is going through.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">Duration: approx. 25 min &middot; Coming soon</p>
+      </div>
+    </div>
+
+    <div class="info-tile-panel" id="pod-2">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">Episode 2</span>
+        <h3 class="info-tile-panel__title">AI in Cancer Care: Hype vs. Reality</h3>
+        <div class="info-tile-panel__player">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--navy-light)"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" style="color:var(--navy)"/></svg>
+          <p style="font-size:0.85rem; color:var(--text-light); margin:0">Podcast coming soon &mdash; episode player will appear here.</p>
+        </div>
+        <p>Artificial intelligence is one of the most discussed topics in oncology right now. But what is actually being used in the clinic, and what is still years away from meaningful adoption? In this episode I separate the genuine clinical advances &mdash; AI-assisted contouring, adaptive radiotherapy, outcome prediction models &mdash; from the marketing-driven claims that do not yet have clinical evidence behind them.</p>
+        <p>I also discuss what patients should know when they hear that AI is being used in their care, and why transparency between clinicians and patients about these tools matters.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">Duration: approx. 30 min &middot; Coming soon</p>
+      </div>
+    </div>
+
+    <div class="info-tile-panel" id="pod-3">
+      <div class="info-tile-panel__inner">
+        <button class="info-tile-panel__close" aria-label="Close">&#x2715;</button>
+        <span class="section-label">Episode 3</span>
+        <h3 class="info-tile-panel__title">Shared Decision-Making in Oncology</h3>
+        <div class="info-tile-panel__player">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color:var(--navy-light)"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none" style="color:var(--navy)"/></svg>
+          <p style="font-size:0.85rem; color:var(--text-light); margin:0">Podcast coming soon &mdash; episode player will appear here.</p>
+        </div>
+        <p>Treatment decisions in oncology are rarely straightforward. In this episode I discuss the principles of shared decision-making &mdash; how patients and clinicians can work through complex choices together, weighing benefits, risks, and what matters most to the individual patient.</p>
+        <p>I cover practical tools such as decision aids and question prompt lists, the difference between explaining risk in absolute versus relative terms, and how to navigate situations where there is genuine clinical uncertainty about the best course of action.</p>
+        <p style="font-size:0.85rem; color:var(--text-light); margin-top:1.5rem; padding-top:1rem; border-top:1px solid var(--border-light)">Duration: approx. 28 min &middot; Coming soon</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__disclaimer">
+      <strong>Disclaimer:</strong> The information on this website is general educational information only and does not replace medical advice from your treating team. If you have concerns about symptoms or your treatment, please contact your treating doctor or cancer care team directly.
+    </div>
+    <div class="footer__inner">
+      <div>
+        <p class="footer__brand-name">Dr Rodrigo Diaz MD, FRANZCR</p>
+        <p class="footer__brand-text">Radiation Oncologist &middot; Rockhampton, QLD<br>Evidence-Based Radiation Oncology and Artificial Intelligence</p>
+      </div>
+      <div>
+        <p class="footer__col-title">Navigation</p>
+        <div class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="patients.html">For Patients</a>
+          <a href="colleagues.html">For Colleagues</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer__col-title">More</p>
+        <div class="footer__links">
+          <a href="ai.html">AI &amp; RadOnc</a>
+          <a href="blog.html">Evidence Review</a>
+          <a href="news.html">News &amp; Podcast</a>
+          <a href="cv.html">CV</a>
+          <a href="https://www.linkedin.com/in/" target="_blank">LinkedIn &#8599;</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Dr Rodrigo Diaz. All rights reserved.</span>
+      <div class="social-bar"><a href="#" target="_blank" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+<a href="#" target="_blank" class="social-icon" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+<a href="#" target="_blank" class="social-icon" aria-label="Youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20.06 12 20.06 12 20.06s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="var(--navy-dark)" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg></a>
+<a href="#" target="_blank" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg></a>
+<a href="https://www.linkedin.com/in/" target="_blank" class="social-icon" aria-label="Linkedin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+</div>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
